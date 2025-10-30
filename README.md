@@ -112,6 +112,4 @@ Customizing to your run
   - If any feature engineering steps were used (scaling, normalization, or domain-specific features), document and include them as optional steps
 
 
-[7](https://medium.datadriveninvestor.com/how-to-write-a-good-readme-for-your-data-science-project-on-github-ebb023d4a50e)
-[8](https://deepsense.ai/blog/standard-template-for-machine-learning-projects-deepsense-ais-approach/)
-[9](https://www.linkedin.com/pulse/readme-template-ai-code-generators-mohamed-a-elsayed-w8ouf)
+
