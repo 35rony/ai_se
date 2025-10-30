@@ -1,0 +1,28 @@
+Here is an AI-prompted code snippet for sorting a list of dictionaries by a specific key, inspired by common AI completions like GitHub Copilot:
+
+```python
+def sort_dicts_by_key_ai(dict_list, key):
+    return sorted(dict_list, key=lambda d: d[key])
+```
+
+Here is a python function written manually:
+
+```python
+def sort_dicts_by_key_manual(dict_list, key):
+    try:
+        return sorted(dict_list, key=lambda d: d[key])
+    except KeyError:
+        print(f"Error: Not all dictionaries contain the key '{key}'")
+        return dict_list
+```
+
+### Efficiency Analysis
+
+Both implementations rely on Python’s built-in `sorted()` function with a lambda function as the `key` parameter. The time complexity is $$O(n \log n)$$ in both cases, where $$n$$ is the number of dictionaries, due to the underlying Timsort algorithm that `sorted()` uses.
+
+The AI-generated code is concise and efficient for typical cases, but it presumes that all dictionaries have the specified key. The manual version adds error handling, which can prevent runtime errors when keys are missing but might introduce slight overhead due to the try-except structure.
+
+Overall, from an efficiency standpoint, both versions perform similarly for large inputs as the primary cost is in sorting. The AI’s version may be marginally faster when no error checking is needed, but the manual version is more robust for real-world scenarios where input data may vary.
+
+Thus, the AI version is most efficient for clean datasets, while the manual version is preferable when stability and fault tolerance are required. Both leverage Python's efficient sorting capabilities equally well.
+
